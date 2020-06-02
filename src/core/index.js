@@ -81,7 +81,7 @@ const addBMapScript = (ak, version = 3) => {
 };
 
 const initMap = async (container, config) => {
-  await addBMapScript(config.ak, config.version);
+  // await addBMapScript(config.ak, config.version);
   return new Map(container, config);
 };
 
