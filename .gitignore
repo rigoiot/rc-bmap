@@ -12,9 +12,7 @@ yarn-debug.log*
 yarn-error.log*
 /docs/.vuepress/dist
 .vscode
-
-lib
+ 
 dist
 package-lock.json
-/.idea
-/lib/
+/.idea 
