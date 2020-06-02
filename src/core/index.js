@@ -17,6 +17,7 @@ import Circle from './Overlay/Circle';
 import Polygon from './Overlay/Polygon';
 import Polyline from './Overlay/Polyline';
 import Label from './Overlay/Label';
+import TextIcon from './Overlay/TextIcon';
 import GroundOverlay from './Overlay/GroundOverlay';
 import PointCollection from './Overlay/PointCollection';
 import Icon from './Overlay/Icon';
@@ -47,6 +48,7 @@ export {
   Circle,
   Polygon,
   Label,
+  TextIcon,
   InfoWindow,
   Polyline,
   Constants,

@@ -72,6 +72,9 @@ const BMapUtil = {
   BLabel(content, opts) {
     return new global.BMap.Label(content, opts);
   },
+  BTextIcon(point, content, styles) {
+    return new BMapLib.TextIconOverlay(point, content, { styles });
+  },
   BCircle(center, radius, opts) {
     return new global.BMap.Circle(center, radius, opts);
   },
@@ -168,13 +171,17 @@ const BMapUtil = {
   getPoint(address, city) {
     return new Promise((resolve, reject) => {
       const geo = new global.BMap.Geocoder();
-      geo.getPoint(address, (point) => {
-        if (point) {
-          resolve(point);
-        } else {
-          reject();
-        }
-      }, city);
+      geo.getPoint(
+        address,
+        (point) => {
+          if (point) {
+            resolve(point);
+          } else {
+            reject();
+          }
+        },
+        city,
+      );
     });
   },
 
